@@ -8,6 +8,12 @@ let count = 0;
 addBtn.addEventListener('click', () => {
     count += 1;
     countDisplay.textContent = count;
+
+    addBtn.style.backgroundColor = "green";
+    setTimeout(() => {
+        addBtn.style.backgroundColor = "";
+
+    }, 1000);
 })
 
 resetBtn.addEventListener('click', () => {
@@ -18,4 +24,9 @@ resetBtn.addEventListener('click', () => {
 subBtn.addEventListener('click', () => {
     count -= 1;
     countDisplay.textContent = count;
+
+    subBtn.style.backgroundColor = "red";
+    setTimeout(() => {
+        subBtn.style.backgroundColor = "";
+    }, 1000);
 })
