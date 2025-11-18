@@ -6,7 +6,7 @@ const subBtn = document.getElementById('subBtn');
 let count = 0;
 
 addBtn.addEventListener('click', () => {
-    count += 1;
+    count ++;
     countDisplay.textContent = count;
 
     addBtn.style.backgroundColor = "green";
